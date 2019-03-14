@@ -1,0 +1,52 @@
+form {
+    width: 800px;
+    height: 400px;
+    margin: 240px auto;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+    height: 50px;
+    line-height: 50px;
+}
+[type=checkbox] {
+    transform: scale(2);
+    vertical-align: middle;
+    margin-left: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: white;
+    background: #3B3F45;
+}
+label {
+    display: inline-block;
+    font-size: 20px;
+    height: 100%;
+    margin-left: 15px;
+
+}
+li:nth-child(even){
+    background: #7A7593;
+}
+li:nth-child(odd) {
+    background: #88839E;
+}
+li {
+    border-top: transparent 2px solid;
+    border-bottom: transparent 2px solid;
+
+}
+li:hover {
+    background: #625E77;
+    border-color: white;
+}
+input[type=checkbox]:checked + label {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+span {
+    font-size: 12px;
+}
